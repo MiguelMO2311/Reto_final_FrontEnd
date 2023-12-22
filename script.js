@@ -17,13 +17,14 @@ function addNewItem() {
         itemNacionality: nacionalityInput,
         itemGenre: genreInput,
         
+
     }
-    dataBase.push(newItem);
-    console.log (newItem);
+    dataBase.push (newItem);
+    console.log(dataBase);
 
 
 };
 
 
-localStorage.setItem('newItem', JSON.stringify('newItem'));
-JSON.parse(localStorage.getItem('newItem'));
+localStorage.setItem('dataBase', JSON.stringify ('dataBase'));
+JSON.parse(localStorage.getItem('dataBase'));
