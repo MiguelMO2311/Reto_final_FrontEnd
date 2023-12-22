@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><h1>Films<span>Universal</span></h1></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-0"></ul>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <img class="imageFilms" src="img/ticket_peliculas5.jpg" alt="">
+                    <button id="btfilms" type="button" class="btn btn-danger" onclick =" createCards();">Films</button>
+                    <img class="imageProfesionals" src="img/ticket_peliculas4.jpg" alt="">
+                    <button id="btProfesionals" type="button" class="btn btn-warning" onclick="createCardsProf()">Profesionals</button>
+                </div>
+            </ul>
+        </div>
+      </nav>
+
+
+    <!--container  -->
+    
+    <div class="container-lg">
+      <div class="row" id ="films-container">
+      </div>   
+    </div>
+
+
+    </div>
+
+  <!-- fin container -->
+    <div class="formNewMovie">
+   
+      <form class="formMovies">
+          <label for="Id">Referencia<input type="number" id="Id" class="form-control" placeholder="Id">
+          <label for="photo">Imagen<input type= "text" id="photo" class=" form-control" placeholder="insertar url img">
+          <label for="title">Título<input type="text" id="title" class="form-control" placeholder="Película">
+          <label for="releaseYear">Año Estreno<input type="number" id="releaseYear" class="form-control" placeholder="Año Estreno">
+          <label for="nacionality">Pais<input type="text" id="nacionality" class="form-control" placeholder="Nacionalidad">
+          <label for="genre">Género<input type="text" id="genre" class="form-control" placeholder="Género">
+          <br>
+          <button type="button" : id="add-travel:pointer;" : onclick="addNewItem()">Añadir Film</button>
+          <br>
+      </form>
+    </div>
+    <footer>
+      <figure class="bloqFooter">
+          <img class="imagenFooter" src="img/facebook_icon.png" alt="">
+          <img class="imagenFooter" src="img/linkedlin_icon.png" alt="">
+          <img class="imagenFooter" src="img/twiter_icon.jpg" alt="">
+          <img class="imagenFooter" src="img/instagram_icon.jpg" alt="">
+      </figure>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+    <script src = "movie.js"></script>
+    <script src = "professional.js"></script>
+</body>
+</html>
