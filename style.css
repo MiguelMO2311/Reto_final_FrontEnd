@@ -55,6 +55,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: nowrap;
     width: 100%;
 
    
