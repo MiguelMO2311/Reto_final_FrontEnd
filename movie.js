@@ -91,5 +91,5 @@ function addNewItem() {
 localStorage.setItem('dataBase', JSON.stringify ('dataBase'));
 
 // para recuperar del LocalStorage ***
-dataBase =JSON.parse(localStorage.getItem('dataBase'));
+JSON.parse(localStorage.getItem('dataBase'));
 
