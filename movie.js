@@ -71,7 +71,7 @@ function addNewItem() {
         itemNacionality: nacionalityInput,
         itemGenre: genreInput,
         }
-
+        dataBase.push(newItem)
         const newItemCard = document.createElement('ul');
         newItemCard.innerHTML =  `<div class="card" style="width: 14rem; margin:2%; padding:2%; border:none;">
         <img src="${newItem.itemPhoto}" class="card-img-top" alt="...">
@@ -86,6 +86,7 @@ function addNewItem() {
         newItemContainer.appendChild(newItemCard);
         container.innerText = newItemCard;
     }
+  
 
 // para almacenar en el LocalStorage ***
 localStorage.setItem('dataBase', JSON.stringify ('dataBase'));
